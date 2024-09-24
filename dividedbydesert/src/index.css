@@ -1,0 +1,55 @@
+
+/* Hero Section */
+.hero-section {
+  background-color: #d9d9d9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
+/* /* Image container with 3D effect */
+.hero-image-container {
+  perspective: 1000px; /* Required for 3D effect */
+}
+
+.hero-image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+  transform: rotateY(-15deg) rotateX(5deg); /* 3D rotation */
+}
+
+/* Music Player with 3D effect */
+.hero-music-player {
+  perspective: 1000px; /* Required for 3D effect */
+}
+
+.music-player-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.music-player-box:hover {
+  transform: rotateY(15deg) rotateX(5deg); /* 3D rotation */
+}
+
+audio {
+  margin-top: 20px;
+  width: 100%;
+} 

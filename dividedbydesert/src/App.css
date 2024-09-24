@@ -1,0 +1,13 @@
+/* Banner Section */
+.banner-section {
+  width: 100%;
+  text-align: center;
+  background-color: #f7f7f7; /* Optional: Set background color */
+}
+
+.banner-section img {
+  width: 100%; /* Make the image fill the entire width */
+  height: auto; /* Allow the height to adjust proportionally */
+  max-height: 200px; /* Limit the maximum height to 100px */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
