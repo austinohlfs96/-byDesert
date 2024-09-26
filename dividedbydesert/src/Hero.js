@@ -5,6 +5,8 @@ const Hero = () => {
   return (
     <section className="hero-section">
      <div class="hero-content">
+      <div style={{display: "flex", flexDirection: "column", alignItems: 'center'}}>
+      <h2>NEW ALBUM COMING SOON!</h2> 
     <div class="hero-image-container">
       <div class="hero-image hero-image-front">
         <img src="Stay.jpg" alt="Front Image"/>
@@ -12,6 +14,10 @@ const Hero = () => {
       <div class="hero-image hero-image-back">
         <img src="Band.jpg" alt="Back Image"/>
       </div>
+      
+    </div>
+    {/* <h2>NEW ALBUM COMING SOON</h2>  */}
+
     </div>
 
         {/* Music Player Section with 3D effect */}

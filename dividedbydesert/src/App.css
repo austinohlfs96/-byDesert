@@ -11,3 +11,9 @@
   max-height: 200px; /* Limit the maximum height to 100px */
   object-fit: cover; /* Ensure the image covers the area without distortion */
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* This will hide any horizontal overflow */
+}

@@ -5,7 +5,7 @@ import './ContactButton.css';
 
 Modal.setAppElement('#root'); // Prevents screen readers from focusing outside the modal
 
-const ContactButton = () => {
+const NewsletterSignup = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -16,7 +16,7 @@ const ContactButton = () => {
     setModalIsOpen(false);
   };
 
-  // Handle form submission using Email.js
+  // Handle form submission using Email.js for newsletter signup
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -30,20 +30,20 @@ const ContactButton = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert('Email sent successfully!');
+          alert('Successfully signed up for the newsletter!');
           closeModal(); // Close the modal on success
         },
         (error) => {
           console.log(error.text);
-          alert('There was an error sending the email.');
+          alert('There was an error signing up for the newsletter.');
         }
       );
   };
 
   return (
     <div>
-      <button className="contact-button" onClick={openModal}>
-        Contact Us
+      <button className="newsletter-button" onClick={openModal}>
+        Sign up for our Newsletter
       </button>
 
       <Modal
@@ -52,18 +52,16 @@ const ContactButton = () => {
         className="modal"
         overlayClassName="overlay"
       >
-        <h2>Contact Us</h2>
-        <form className="contact-form" onSubmit={sendEmail}>
+        <h2>Join Our Newsletter</h2>
+        <p>Stay updated with the latest news and upcoming music and merch!.</p>
+        <form className="newsletter-form" onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="name" required />
 
           <label>Email</label>
           <input type="email" name="email" required />
 
-          <label>Message</label>
-          <textarea name="message" required />
-
-          <button type="submit">Send</button>
+          <button className="newsletter-button" type="submit">Sign Up</button>
         </form>
         <button className="close-button" onClick={closeModal}>
           Close
@@ -73,4 +71,4 @@ const ContactButton = () => {
   );
 };
 
-export default ContactButton;
+export default NewsletterSignup;

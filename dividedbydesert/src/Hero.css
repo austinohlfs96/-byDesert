@@ -6,6 +6,7 @@ body {
 
 /* Hero Section */
 .hero-section {
+  
   position: relative; /* Ensure the section can position its pseudo-element */
   height: 100vh;
   display: flex;

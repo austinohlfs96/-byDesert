@@ -2,7 +2,7 @@
 .members-section {
   font-family: 'Raleway', sans-serif;
   padding: 50px;
-  background-color: #f4f4f4;
+  background-image: url("../public/texture25.jpg");
   text-align: center;
 }
 
@@ -15,9 +15,12 @@
 .member {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 40px;
   text-align: left;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 .member-info {
@@ -31,6 +34,7 @@
 }
 
 .member-info p {
+  font-family: "Nanum Gothic Coding", monospace;
   font-size: 1.1em;
   line-height: 1.6;
 }
@@ -39,6 +43,7 @@
 .member-photo {
   width: 50%;
   text-align: center;
+  display: contents;
 }
 
 .member-photo img {
