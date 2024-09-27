@@ -64,6 +64,7 @@ const Members = () => {
             <div className="member-info">
               <h3 style={{textDecoration: 'underline'}}>{member.name}</h3>
               <p className="role"><strong>Roles: </strong>{member.role}</p>
+              <br />
               <p className="bio">
                 {isExpanded ? member.bio : member.bio.substring(0, 150) + '...'}
                 <span

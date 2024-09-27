@@ -6,7 +6,6 @@ body {
 
 /* Hero Section */
 .hero-section {
-  
   position: relative; /* Ensure the section can position its pseudo-element */
   height: 100vh;
   display: flex;
@@ -14,7 +13,16 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 0; /* Ensures content stays above the background image */
+  gap: 20vw;
 }
+
+/* Apply a gap for larger screens */
+@media (min-width: 768px) {
+  .hero-section {
+    gap: 0px; /* Adjust the gap as needed */
+  }
+}
+
 
 .hero-section::before {
   content: ""; /* Required for pseudo-elements */
@@ -48,6 +56,7 @@ body {
   aspect-ratio: 1; /* Ensure the container is always a square */
   transform-style: preserve-3d; /* Allows for the 3D flip */
   animation: flip-animation 9s infinite; /* Add flip animation */
+  margin-top: 20px;
 }
 
 .hero-image {
@@ -100,6 +109,7 @@ body {
 
 /* Media Query for mobile view */
 @media (max-width: 768px) {
+
   .hero-content {
     flex-direction: column; /* Switch to column layout on mobile */
   }
@@ -114,3 +124,5 @@ body {
     margin-left: 0; /* Remove the left margin on mobile */
   }
 }
+
+
