@@ -43,7 +43,7 @@ body * {
 }
 
 .player {
-  background-color: #080747;
+  background-color: rgb(1 24 36 / 46%);
   padding: 12px;
   border-radius: 20px;
 }
