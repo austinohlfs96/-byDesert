@@ -1,20 +1,7 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React from 'react';
 import './Music.css';
 
-Modal.setAppElement('#root'); // This prevents screen readers from focusing outside the modal
-
 const Music = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-
   return (
     <section className="music-section">
       <h2>Our Music</h2>
@@ -41,23 +28,14 @@ const Music = () => {
         </div>
       </div>
 
-      {/* Browse Merch Button */}
-      <button className="newsletter-button" style={{ marginTop: '30px' }} onClick={openModal}>
+      {/* Browse Merch Button with Redirect */}
+      <button
+        className="newsletter-button"
+        style={{ marginTop: '30px' }}
+        onClick={() => window.location.href = 'https://www.teepublic.com/t-shirt/66626347-divided-by-desert?store_id=3576138'} // Redirect link here
+      >
         Browse Our Merch
       </button>
-
-      {/* Modal */}
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className="modal"
-        overlayClassName="overlay"
-      >
-        <h2>Merch Coming Soon!</h2>
-        <button className="close-button" onClick={closeModal}>
-          Close
-        </button>
-      </Modal>
     </section>
   );
 };

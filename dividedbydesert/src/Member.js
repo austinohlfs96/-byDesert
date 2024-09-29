@@ -62,7 +62,7 @@ const Members = () => {
               <img src={member.image} alt={member.name} />
             </div>
             <div className="member-info">
-              <h3 style={{textDecoration: 'underline'}}>{member.name}</h3>
+              <h3 style={{textDecoration: 'underline', marginTop: '10px'}}>{member.name}</h3>
               <p className="role"><strong>Roles: </strong>{member.role}</p>
               <br />
               <p className="bio">
