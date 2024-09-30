@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-links">
-          <a href=".App">Home</a>
+          <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#music">Music</a>
           <a href="#members">Members</a>

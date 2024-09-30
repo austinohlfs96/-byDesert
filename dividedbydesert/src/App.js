@@ -11,8 +11,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <div id="hero">
     <Navbar />
-    <section id="hero">
+    </div>
+    <section >
       <Hero />
     </section>
     <section id="about">
