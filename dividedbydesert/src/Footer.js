@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-links">
-          <a href="#about">Home</a>
-          <a href="#music">About</a>
-          <a href="#photos">Music</a>
-          <a href="#contact">Members</a>
+          <a href=".App">Home</a>
+          <a href="#about">About</a>
+          <a href="#music">Music</a>
+          <a href="#members">Members</a>
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/profile.php?id=61564069377059" aria-label="Facebook">
