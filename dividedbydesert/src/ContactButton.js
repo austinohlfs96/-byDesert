@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import emailjs from 'emailjs-com'; // Import Email.js library
 import './ContactButton.css';
 
 Modal.setAppElement('#root'); // Prevents screen readers from focusing outside the modal
@@ -17,30 +18,25 @@ const NewsletterSignup = () => {
     setStatusMessage(""); // Clear the status message when modal closes
   };
 
-  // Handle form submission using Formspree and the Fetch API
+  // Handle form submission using Email.js
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target); // Get form data
+    // Replace these with your Email.js service ID, template ID, and user ID
+    const serviceID = 'service_ygcp0gr';
+    const templateID = 'template_rkddpbq';
+    const userID = 'TnzFvoC03IPVChl8N';
 
-    fetch('https://formspree.io/f/mnnaeplz', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok) {
+    emailjs.sendForm(serviceID, templateID, e.target, userID)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
         setStatusMessage("Successfully signed up for the newsletter!");
         e.target.reset(); // Clear the form after successful submission
-      } else {
-        setStatusMessage("There was an error signing up for the newsletter. Please try again.");
-      }
-    })
-    .catch(() => {
-      setStatusMessage("There was a problem submitting your form. Please try again.");
-    });
+      })
+      .catch((error) => {
+        console.error('FAILED...', error);
+        setStatusMessage("There was a problem submitting your form. Please try again.");
+      });
   };
 
   return (
@@ -58,7 +54,7 @@ const NewsletterSignup = () => {
         <h2>Join Our Newsletter</h2>
         <p>Stay updated with the latest news and upcoming music and merch!.</p>
 
-        {/* Form submission using Formspree with AJAX */}
+        {/* Form submission using Email.js */}
         <form className="newsletter-form" onSubmit={handleSubmit}>
           <label>Name</label>
           <input type="text" name="name" required />
