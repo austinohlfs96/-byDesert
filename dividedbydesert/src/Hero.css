@@ -115,13 +115,31 @@ body {
   }
 
   .hero-image-container {
-    width: 80vw; /* Adjust container width for mobile */
+    width: 50vw; /* Adjust container width for mobile */
     height: auto;
     margin-bottom: 20px; /* Add space between the image and the music player */
   }
 
   .hero-music-player {
     margin-left: 0; /* Remove the left margin on mobile */
+  }
+
+  
+  @media (max-width: 450px) {
+
+    .hero-content {
+      flex-direction: column; /* Switch to column layout on mobile */
+    }
+  
+    .hero-image-container {
+      width: 70vw; /* Adjust container width for mobile */
+      height: auto;
+      margin-bottom: 20px; /* Add space between the image and the music player */
+    }
+  
+    .hero-music-player {
+      margin-left: 0; /* Remove the left margin on mobile */
+    }
   }
 }
 

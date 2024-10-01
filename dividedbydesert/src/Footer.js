@@ -10,6 +10,13 @@ const Footer = () => {
           <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#music">Music</a>
+          <a 
+            href="https://www.teepublic.com/t-shirt/66626347-divided-by-desert?store_id=3576138" 
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer" // Improves security when opening a new tab
+          >
+            Shop
+          </a>
           <a href="#members">Members</a>
         </div>
         <div className="social-icons">

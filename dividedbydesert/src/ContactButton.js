@@ -30,7 +30,7 @@ const NewsletterSignup = () => {
     emailjs.sendForm(serviceID, templateID, e.target, userID)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        setStatusMessage("Successfully signed up for the newsletter!");
+        setStatusMessage("Successfully signed up for the newsletter! Please check your email for confirmation.");
         e.target.reset(); // Clear the form after successful submission
       })
       .catch((error) => {

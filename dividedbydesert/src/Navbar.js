@@ -35,6 +35,16 @@ const Navbar = () => {
           Music
         </Link>
         <Link
+        >
+         <a 
+            href="https://www.teepublic.com/t-shirt/66626347-divided-by-desert?store_id=3576138" 
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer" // Improves security when opening a new tab
+          >
+            Shop
+          </a>
+        </Link>
+        <Link
           activeClass="active"
           to="members"
           spy={true}
