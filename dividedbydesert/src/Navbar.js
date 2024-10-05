@@ -37,7 +37,7 @@ const Navbar = () => {
         <Link
         >
          <a 
-            href="https://www.teepublic.com/t-shirt/66626347-divided-by-desert?store_id=3576138" 
+            onClick={() => window.location.href = 'https://www.redbubble.com/people/TheFuturePassed/shop?asc=u'}  
             target="_blank" // Opens the link in a new tab
             rel="noopener noreferrer" // Improves security when opening a new tab
           >

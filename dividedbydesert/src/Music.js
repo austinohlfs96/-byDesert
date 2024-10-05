@@ -32,7 +32,7 @@ const Music = () => {
       <button
         className="newsletter-button"
         style={{ marginTop: '30px' }}
-        onClick={() => window.location.href = 'https://www.teepublic.com/t-shirt/66626347-divided-by-desert?store_id=3576138'} // Redirect link here
+        onClick={() => window.location.href = 'https://www.redbubble.com/people/TheFuturePassed/shop?asc=u'} // Redirect link here
       >
         Browse Our Merch
       </button>

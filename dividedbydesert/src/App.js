@@ -6,6 +6,7 @@ import About from './About';
 import Music from './Music';
 import Member from './Member';
 import './App.css';
+import AlbumTease from './Album';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
     </section>
     <section id="music">
       <Music />
+    </section>
+    <section id="music">
+      <AlbumTease />
     </section>
     <section id="members">
       <Member />

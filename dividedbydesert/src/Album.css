@@ -1,0 +1,111 @@
+.album-tease {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Softer background to blend with the page */
+  color: #333;
+  border-top: 1px solid #ddd; /* Lighter and thinner border */
+}
+
+.album-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.album-text {
+  max-width: 600px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.album-text h2 {
+  font-size: 2.2rem;
+  color: #222; /* Slightly darker for better readability */
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+
+.album-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.album-text h4 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.album-text ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.album-text li {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.album-text li strong {
+  color: #222;
+}
+
+.album-image {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for image */
+}
+
+.album-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+  .album-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text and image at the top */
+    text-align: left;
+  }
+
+  .album-text {
+    max-width: 50%;
+  }
+
+  .album-image {
+    max-width: 45%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .album-tease {
+    padding: 30px 10px;
+  }
+
+  .album-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .album-text p,
+  .album-text li {
+    font-size: 1rem;
+  }
+
+  .album-image {
+    margin-top: 20px;
+  }
+}
