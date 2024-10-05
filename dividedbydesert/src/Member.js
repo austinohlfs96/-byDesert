@@ -51,35 +51,39 @@ const Members = () => {
 
   return (
     <section className="members-section">
-      <h2>Meet the Band</h2>
+  <h2>Meet the Band</h2>
 
-      {/* Render band members dynamically */}
-      {bandMembers.map((member, index) => {
-        const isExpanded = expandedState[index];
-        return (
-          <div className="member" key={index}>
-            <div className="member-photo">
-              <img src={member.image} alt={member.name} />
-            </div>
-            <div className="member-info">
-              <h3 style={{textDecoration: 'underline', marginTop: '10px'}}>{member.name}</h3>
-              <p className="role"><strong>Roles: </strong>{member.role}</p>
-              <br />
-              <p className="bio">
-                {isExpanded ? member.bio : member.bio.substring(0, 150) + '...'}
-                <span
-                  style={{ color: 'blue', cursor: 'pointer', marginLeft: '5px' }}
-                  onClick={() => toggleExpand(index)}
-                >
-                  {isExpanded ? 'Read less' : 'Read more'}
-                </span>
-              </p>
-            </div>
-          </div>
-        );
-      })}
-      <Newsletter />
-    </section>
+  {/* Render band members dynamically */}
+  {bandMembers.map((member, index) => {
+    const isExpanded = expandedState[index];
+    const shouldShowReadMore = member.bio.length > 150; // Check if bio is longer than 150 characters
+    return (
+      <div className="member" key={index}>
+        <div className="member-photo">
+          <img src={member.image} alt={member.name} />
+        </div>
+        <div className="member-info">
+          <h3 style={{ textDecoration: 'underline', marginTop: '10px' }}>{member.name}</h3>
+          <p className="role"><strong>Roles: </strong>{member.role}</p>
+          <br />
+          <p className="bio">
+            {isExpanded || !shouldShowReadMore ? member.bio : member.bio.substring(0, 150) + '...'}
+            {shouldShowReadMore && (
+              <span
+                style={{ color: 'blue', cursor: 'pointer', marginLeft: '5px' }}
+                onClick={() => toggleExpand(index)}
+              >
+                {isExpanded ? 'Read less' : 'Read more'}
+              </span>
+            )}
+          </p>
+        </div>
+      </div>
+    );
+  })}
+  <Newsletter />
+</section>
+
   );
 };
 
