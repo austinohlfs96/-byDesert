@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero-section">
      <div class="hero-content">
       <div style={{display: "flex", flexDirection: "column", alignItems: 'center'}}>
-      <h2 style={{marginTop: "20px", fontFamily: "Roboto Condensed"}}>DEBUT ALBUM COMING SOON!</h2> 
+      <h2 style={{marginTop: "20px", fontFamily: "Roboto Condensed"}}>DEBUT ALBUM OUT NOW!</h2> 
     <div class="hero-image-container">
       <div class="hero-image hero-image-front">
         <img src="Stay.jpg" alt="Front Image"/>

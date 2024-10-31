@@ -5,34 +5,23 @@ const Music = () => {
   return (
     <section className="music-section">
       <h2>Our Music</h2>
-      <div className="music-videos">
-        <div className="video-container">
-          <h3>The River</h3>
-          <iframe
-            src="https://www.youtube.com/embed/AQhCi8jP7gk"
-            title="The River"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-container">
-          <h3>Rain</h3>
-          <iframe
-            src="https://www.youtube.com/embed/zO8m6UBLg-s"
-            title="Rain"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+      <div className="music-spotify">
+        <iframe
+          src="https://open.spotify.com/embed/artist/3Te3Fakg8uKlnkkb5BYjLk" // Replace YOUR_ARTIST_ID with the band's Spotify Artist ID
+          width="100%"
+          height="380"
+          frameBorder="0"
+          allow="encrypted-media"
+          title="Spotify Catalog"
+          allowFullScreen
+        ></iframe>
       </div>
 
       {/* Browse Merch Button with Redirect */}
       <button
         className="newsletter-button"
         style={{ marginTop: '30px' }}
-        onClick={() => window.location.href = 'https://www.redbubble.com/people/TheFuturePassed/shop?asc=u'} // Redirect link here
+        onClick={() => window.location.href = 'https://www.redbubble.com/people/TheFuturePassed/shop?asc=u'}
       >
         Browse Our Merch
       </button>

@@ -11,7 +11,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Divided by Desert</div>
+       <img src="/DbyDlogo.png" alt="Logo" className="logo-image" style={{height: '60px'}} /> {/* Add your logo path */}
+       
+      <div className="logo" style={{marginLeft: "-38px"}}>Divided by Desert</div>
       
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <Link

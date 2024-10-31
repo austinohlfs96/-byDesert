@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaSpotify, FaYoutube, FaAmazon } from 'react-icons/fa';
 import './Footer.css'; // Import the CSS file
 
 const Footer = () => {
@@ -21,14 +21,17 @@ const Footer = () => {
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com/profile.php?id=61564069377059" aria-label="Facebook">
-            <FaFacebook size={24} />
+            <FaFacebook size={24} style={{margiLeft: '10px', marginRight: '10px'}}/>
           </a>
-          {/* <a href="https://instagram.com" aria-label="Instagram">
-            <FaInstagram size={24} />
-          </a>
-          <a href="https://twitter.com" aria-label="Twitter">
-            <FaTwitter size={24} />
-          </a> */}
+          <a href="https://open.spotify.com/artist/3Te3Fakg8uKlnkkb5BYjLk" target="_blank" rel="noopener noreferrer">
+              <FaSpotify className="icon" style={{color: "#3be477", margiLeft: '10px', marginRight: '10px'}}/>
+            </a>
+            <a href="https://https://www.youtube.com/channel/UCbdGDbjUGmnq65jjbvQQs0g" target="_blank" rel="noopener noreferrer">
+              <FaYoutube className="icon" style={{color: "red", margiLeft: '10px', marginRight: '10px'}}/>
+            </a>
+            <a href="https://music.amazon.com/artists/B0DK49ZSNX/divided-by-desert" target="_blank" rel="noopener noreferrer">
+              <FaAmazon className="icon" style={{ margiLeft: '10px', marginRight: '10px'}}/>
+            </a>
         </div>
         <p className="copyright">
           &copy; 2024 Divided by Desert
@@ -37,6 +40,7 @@ const Footer = () => {
           Website Designed by <a href="https://austin-ohlfs.onrender.com/" target="_blank" style={{textDecoration: 'underline'}}>Austin Ohlfs</a>
           </p>
       </div>
+      <img src='DbyDlogo.png' style={{height: '40px', marginTop: '10px'}}/>
     </footer>
   );
 };

@@ -72,6 +72,32 @@
   border-radius: 10px;
 }
 
+.streaming-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.streaming-links a {
+  color: black; /* Spotify green as base color */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.streaming-links a:hover {
+  color: black;
+}
+
+.icon {
+  font-size: 1.4em;
+}
+
+
 /* Media Queries for Responsive Design */
 @media screen and (min-width: 768px) {
   .album-content {
