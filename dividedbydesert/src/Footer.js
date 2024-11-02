@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaSpotify, FaYoutube, FaAmazon } from 'react-icons/fa';
+import { FaFacebook, FaSpotify, FaYoutube, FaAmazon, FaApple } from 'react-icons/fa';
 import './Footer.css'; // Import the CSS file
 
 const Footer = () => {
@@ -26,6 +26,9 @@ const Footer = () => {
           <a href="https://open.spotify.com/artist/3Te3Fakg8uKlnkkb5BYjLk" target="_blank" rel="noopener noreferrer">
               <FaSpotify className="icon" style={{color: "#3be477", margiLeft: '10px', marginRight: '10px'}}/>
             </a>
+            <a href="https://music.apple.com/us/artist/divided-by-desert/1777300677" aria-label="Facebook">
+            <FaApple size={24} style={{color: "black", margiLeft: '10px', marginRight: '10px'}}/>
+          </a>
             <a href="https://https://www.youtube.com/channel/UCbdGDbjUGmnq65jjbvQQs0g" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="icon" style={{color: "red", margiLeft: '10px', marginRight: '10px'}}/>
             </a>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSpotify, FaYoutube, FaAmazon } from 'react-icons/fa';
+import { FaSpotify, FaYoutube, FaAmazon, FaApple} from 'react-icons/fa';
 import './Album.css';
 
 const AlbumTease = () => {
@@ -32,7 +32,10 @@ const AlbumTease = () => {
             <a href="https://open.spotify.com/album/0IE2VnuE79KWy99godDUgc?si=vu0ew0nbR12Oh_9yNEoHYQ" target="_blank" rel="noopener noreferrer">
               <FaSpotify className="icon" style={{color: "black",  fontSize: "xx-large"}}/>
             </a>
-            <a href="https://music.apple.com/us/album/YOUR_APPLE_MUSIC_ALBUM_ID" target="_blank" rel="noopener noreferrer">
+            <a href="https://music.apple.com/us/album/stay/1777301386" target="_blank" rel="noopener noreferrer">
+              <FaApple className="icon" style={{color: "black",  fontSize: "xx-large"}}/>
+              </a>
+            <a href="https://www.youtube.com/channel/UCbdGDbjUGmnq65jjbvQQs0g" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="icon" style={{color: "black",  fontSize: "xx-large"}}/>
             </a>
             <a href="https://music.amazon.com/artists/B0DK49ZSNX/divided-by-desert" target="_blank" rel="noopener noreferrer">
